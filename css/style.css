@@ -1,0 +1,95 @@
+/* ===== Effets "glass" ===== */
+.glass {
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-light {
+    background: rgba(255, 255, 255, 0.7);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+/* ===== Texte dégradé ===== */
+.gradient-text {
+    background: linear-gradient(135deg, #60A5FA 0%, #A855F7 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ===== Formulaire de contact ===== */
+.form-field {
+    width: 100%;
+    padding: 0.85rem 1rem;
+    border-radius: 0.75rem;
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(148, 163, 184, 0.2);
+    color: #f1f5f9;
+    font-size: 0.95rem;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.form-field::placeholder {
+    color: #64748b;
+}
+
+.form-field:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.25);
+}
+
+.form-field.is-invalid {
+    border-color: #f43f5e;
+    box-shadow: 0 0 0 3px rgba(244, 63, 94, 0.2);
+}
+
+.field-error {
+    color: #fb7185;
+    font-size: 0.75rem;
+    margin-top: 0.35rem;
+    min-height: 1rem;
+}
+
+/* Champ piège anti-spam (invisible pour les humains) */
+.hp-field {
+    position: absolute;
+    left: -9999px;
+    width: 1px;
+    height: 1px;
+    opacity: 0;
+    overflow: hidden;
+}
+
+/* Message de statut */
+.form-status {
+    display: none;
+    padding: 0.9rem 1rem;
+    border-radius: 0.75rem;
+    font-size: 0.9rem;
+    text-align: left;
+}
+
+.form-status.success {
+    display: block;
+    background: rgba(16, 185, 129, 0.12);
+    border: 1px solid rgba(16, 185, 129, 0.4);
+    color: #6ee7b7;
+}
+
+.form-status.error {
+    display: block;
+    background: rgba(244, 63, 94, 0.12);
+    border: 1px solid rgba(244, 63, 94, 0.4);
+    color: #fda4af;
+}
+
+/* Bouton d'envoi en chargement */
+.btn-loading {
+    opacity: 0.7;
+    pointer-events: none;
+}

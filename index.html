@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nolan Babic | Développeur & Ingénieur Web</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuration Tailwind (doit venir après le CDN) -->
+    <script src="js/tailwind-config.js"></script>
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Styles personnalisés -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body class="bg-slate-950 text-slate-100 font-sans selection:bg-brand-500 selection:text-white antialiased">
+
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 w-full z-50 glass border-b border-slate-800/80">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <a href="#" class="text-2xl font-bold tracking-wider font-mono">
+                <span class="text-brand-500">&lt;</span>NOLAN<span class="text-brand-500">/&gt;</span>
+            </a>
+
+            <div class="hidden md:flex items-center gap-8 font-medium text-sm text-slate-300">
+                <a href="#about" class="hover:text-brand-500 transition-colors">À propos</a>
+                <a href="#skills" class="hover:text-brand-500 transition-colors">Compétences</a>
+                <a href="#projects" class="hover:text-brand-500 transition-colors">Projets</a>
+                <a href="#experience" class="hover:text-brand-500 transition-colors">Parcours</a>
+                <a href="#certifications" class="hover:text-brand-500 transition-colors">Certifications</a>
+                <a href="#contact" class="px-5 py-2.5 rounded-full bg-brand-600 hover:bg-brand-500 text-white font-semibold transition-all shadow-lg shadow-brand-500/20">Me Contacter</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="min-h-screen flex items-center justify-center pt-24 pb-12 px-6 relative overflow-hidden">
+        <!-- Arrière-plan décoratif -->
+        <div class="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-brand-600/15 rounded-full blur-[120px] pointer-events-none"></div>
+
+        <div class="max-w-5xl mx-auto text-center space-y-8 relative z-10">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass border border-brand-500/30 text-brand-400 text-sm font-mono">
+                <span class="w-2 h-2 rounded-full bg-emerald-500 animate-ping"></span>
+                Disponible pour de nouveaux défis
+            </div>
+
+            <h1 class="text-5xl sm:text-7xl font-extrabold tracking-tight">
+                Bonjour, je suis <br>
+                <span class="gradient-text">Nolan Babic</span>
+            </h1>
+
+            <p class="text-lg sm:text-xl text-slate-400 max-w-3xl mx-auto leading-relaxed">
+                Etudiant Développeur Web & Passionné de Cybersécurité. Spécialisé dans la conception d'applications web modernes, sécurisées, performantes et clé en main.
+            </p>
+
+            <div class="flex flex-wrap items-center justify-center gap-4 pt-4">
+                <a href="#projects" class="px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold flex items-center gap-2 transition-all shadow-lg shadow-brand-600/30">
+                    <i data-lucide="folder-code"></i> Voir mes projets
+                </a>
+                <a href="#contact" class="px-8 py-4 rounded-xl glass hover:bg-slate-800 text-slate-200 font-semibold flex items-center gap-2 transition-all">
+                    <i data-lucide="mail"></i> Me contacter
+                </a>
+            </div>
+
+            <!-- Infos de contact rapides -->
+            <div class="pt-12 grid grid-cols-1 sm:grid-cols-3 gap-4 text-slate-400 text-sm font-mono max-w-2xl mx-auto">
+                <div class="flex items-center justify-center gap-2 glass p-3 rounded-lg">
+                    <i data-lucide="map-pin" class="text-brand-500 w-4 h-4"></i> Béthune (62400)
+                </div>
+                <div class="flex items-center justify-center gap-2 glass p-3 rounded-lg">
+                    <i data-lucide="phone" class="text-brand-500 w-4 h-4"></i> 07 69 36 72 11
+                </div>
+                <div class="flex items-center justify-center gap-2 glass p-3 rounded-lg">
+                    <i data-lucide="mail" class="text-brand-500 w-4 h-4"></i> nolan.babic.pro@gmail.com
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Compétences -->
+    <section id="skills" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                Compétences <span class="gradient-text">Techniques</span>
+            </h2>
+            <p class="text-slate-400">Un ensemble de technologies maîtrisées pour concrétiser des projets de A à Z.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Full-Stack Web -->
+            <div class="glass p-8 rounded-2xl space-y-4 hover:border-brand-500/50 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400 mb-6">
+                    <i data-lucide="code" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold">Développement Web</h3>
+                <p class="text-sm text-slate-400">Conception Web responsive, robuste et moderne Front-End et Back-End.</p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">HTML5 / CSS3</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">JavaScript</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">PHP</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Node.js</span>
+                </div>
+            </div>
+
+            <!-- Cybersécurité & Réseau -->
+            <div class="glass p-8 rounded-2xl space-y-4 hover:border-purple-500/50 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400 mb-6">
+                    <i data-lucide="shield-check" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold">Cybersécurité & Réseaux</h3>
+                <p class="text-sm text-slate-400">Sécurisation des applications, chiffrement des données et analyse réseau.</p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">HTTPS / TLS</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Hashage Argon2</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Wireshark</span>
+                </div>
+            </div>
+
+            <!-- DevOps & Serveurs -->
+            <div class="glass p-8 rounded-2xl space-y-4 hover:border-emerald-500/50 transition-all">
+                <div class="w-12 h-12 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400 mb-6">
+                    <i data-lucide="server" class="w-6 h-6"></i>
+                </div>
+                <h3 class="text-xl font-bold">Déploiement & BDD</h3>
+                <p class="text-sm text-slate-400">Mise en production, administration système et gestion de bases de données.</p>
+                <div class="flex flex-wrap gap-2 pt-2">
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Linux</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">Apache</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">SSH</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">MySQL</span>
+                    <span class="px-3 py-1 rounded-md bg-slate-800 text-xs font-mono text-slate-300">phpMyAdmin</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Projets -->
+    <section id="projects" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                Projets <span class="gradient-text">Récents</span>
+            </h2>
+            <p class="text-slate-400">Découvre mes réalisations phares du développement à la mise en ligne.</p>
+        </div>
+
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+            <!-- Projet Auto-école CFR -->
+            <div class="glass rounded-2xl overflow-hidden group hover:border-brand-500/50 transition-all">
+                <div class="h-48 bg-slate-800 flex items-center justify-center relative overflow-hidden">
+                    <div class="absolute inset-0 bg-gradient-to-t from-slate-950 to-transparent z-10"></div>
+                    <i data-lucide="car" class="w-20 h-20 text-slate-700 group-hover:scale-110 group-hover:text-brand-500 transition-all duration-300"></i>
+                </div>
+                <div class="p-8 space-y-4 relative z-20 -mt-10">
+                    <span class="text-xs font-mono px-3 py-1 rounded-full bg-brand-500/20 text-brand-400 border border-brand-500/30">Projet Web Complet</span>
+                    <h3 class="text-2xl font-bold">Plateforme Web Auto-École CFR</h3>
+                    <p class="text-slate-400 text-sm leading-relaxed">
+                        Conception, développement et déploiement intégral d'une plateforme web permettant la consultation de formations et la prise de rendez-vous intuitive pour les leçons de conduite.
+                    </p>
+                    <ul class="text-xs text-slate-300 space-y-2 font-mono">
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Déploiement serveur & supervision post-mise en ligne</li>
+                        <li class="flex items-center gap-2"><i data-lucide="check" class="w-4 h-4 text-emerald-400"></i> Sécurisation et protection stricte des données utilisateurs</li>
+                    </ul>
+                    <div class="flex flex-wrap gap-2 pt-4">
+                        <span class="text-xs font-mono text-slate-400">#HTML/CSS/JS</span>
+                        <span class="text-xs font-mono text-slate-400">#PHP</span>
+                        <span class="text-xs font-mono text-slate-400">#Linux</span>
+                        <span class="text-xs font-mono text-slate-400">#Apache</span>
+                        <span class="text-xs font-mono text-slate-400">#Argon2</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Certifications & Diplômes -->
+    <section id="certifications" class="py-20 px-6 max-w-7xl mx-auto">
+        <div class="text-center space-y-4 mb-16">
+            <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                Certifications & <span class="gradient-text">Diplômes</span>
+            </h2>
+            <p class="text-slate-400">Garanties de mes compétences validées par des organismes reconnus.</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Certification Python -->
+            <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:scale-[1.02] transition-all">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <i data-lucide="award" class="w-8 h-8 text-yellow-500"></i>
+                        <span class="text-xs font-mono text-slate-400">2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold">Certification Python</h3>
+                    <p class="text-xs text-slate-400">France Université Numérique</p>
+                </div>
+            </div>
+
+            <!-- Certification C++ -->
+            <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:scale-[1.02] transition-all">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <i data-lucide="award" class="w-8 h-8 text-blue-500"></i>
+                        <span class="text-xs font-mono text-slate-400">2026</span>
+                    </div>
+                    <h3 class="text-lg font-bold">Certification C++</h3>
+                    <p class="text-xs text-slate-400">Cisco Networking Academy</p>
+                </div>
+            </div>
+
+            <!-- Baccalauréat -->
+            <div class="glass p-6 rounded-2xl flex flex-col justify-between hover:scale-[1.02] transition-all">
+                <div class="space-y-4">
+                    <div class="flex justify-between items-start">
+                        <i data-lucide="graduation-cap" class="w-8 h-8 text-brand-400"></i>
+                        <span class="text-xs font-mono text-slate-400">2024</span>
+                    </div>
+                    <h3 class="text-lg font-bold">Baccalauréat</h3>
+                    <p class="text-xs text-slate-400">Lycée Saint Dominique Béthune</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="py-20 px-6 border-t border-slate-800 relative">
+        <div class="max-w-6xl mx-auto">
+            <div class="text-center space-y-4 mb-16">
+                <h2 class="text-3xl font-bold tracking-tight sm:text-4xl">
+                    Travaillons <span class="gradient-text">Ensemble</span>
+                </h2>
+                <p class="text-slate-400 max-w-xl mx-auto">
+                    Tu as un projet web, besoin d'une expertise technique ou d'une collaboration ? N'hésite pas à me contacter !
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-5 gap-8">
+                <!-- Coordonnées -->
+                <div class="lg:col-span-2 space-y-4">
+                    <div class="glass p-6 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 shrink-0 rounded-xl bg-brand-500/10 flex items-center justify-center text-brand-400">
+                            <i data-lucide="mail" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-mono text-slate-500">E-mail</p>
+                            <a href="mailto:nolan.babic.pro@gmail.com" class="text-sm text-slate-200 hover:text-brand-400 transition-colors break-all">nolan.babic.pro@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="glass p-6 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 shrink-0 rounded-xl bg-purple-500/10 flex items-center justify-center text-purple-400">
+                            <i data-lucide="phone" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-mono text-slate-500">Téléphone</p>
+                            <a href="tel:+33769367211" class="text-sm text-slate-200 hover:text-brand-400 transition-colors">07 69 36 72 11</a>
+                        </div>
+                    </div>
+
+                    <div class="glass p-6 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 shrink-0 rounded-xl bg-emerald-500/10 flex items-center justify-center text-emerald-400">
+                            <i data-lucide="map-pin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-mono text-slate-500">Localisation</p>
+                            <p class="text-sm text-slate-200">Béthune (62400)</p>
+                        </div>
+                    </div>
+
+                    <div class="glass p-6 rounded-2xl flex items-center gap-4">
+                        <div class="w-12 h-12 shrink-0 rounded-xl bg-blue-500/10 flex items-center justify-center text-blue-400">
+                            <i data-lucide="linkedin" class="w-6 h-6"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs font-mono text-slate-500">LinkedIn</p>
+                            <a href="https://www.linkedin.com/in/nolan-babic-1082a03b6" target="_blank" rel="noopener noreferrer" class="text-sm text-slate-200 hover:text-brand-400 transition-colors break-all">Nolan Babic</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Formulaire -->
+                <div class="lg:col-span-3 glass p-8 rounded-2xl">
+                    <form id="contact-form" action="php/contact.php" method="POST" novalidate class="space-y-5">
+
+                        <!-- Champ piège anti-spam : ne pas remplir -->
+                        <div class="hp-field" aria-hidden="true">
+                            <label for="website">Ne pas remplir ce champ</label>
+                            <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+                        </div>
+
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-5">
+                            <div>
+                                <label for="name" class="block text-sm font-medium text-slate-300 mb-2">Nom</label>
+                                <input type="text" id="name" name="name" class="form-field" placeholder="Votre nom" maxlength="100" autocomplete="name" required>
+                                <p class="field-error" data-error-for="name"></p>
+                            </div>
+                            <div>
+                                <label for="email" class="block text-sm font-medium text-slate-300 mb-2">E-mail</label>
+                                <input type="email" id="email" name="email" class="form-field" placeholder="vous@exemple.fr" maxlength="254" autocomplete="email" required>
+                                <p class="field-error" data-error-for="email"></p>
+                            </div>
+                        </div>
+
+                        <div>
+                            <label for="subject" class="block text-sm font-medium text-slate-300 mb-2">Objet</label>
+                            <input type="text" id="subject" name="subject" class="form-field" placeholder="Sujet de votre message" maxlength="150" required>
+                            <p class="field-error" data-error-for="subject"></p>
+                        </div>
+
+                        <div>
+                            <div class="flex justify-between items-center mb-2">
+                                <label for="message" class="block text-sm font-medium text-slate-300">Message</label>
+                                <span id="message-counter" class="text-xs font-mono text-slate-500">0 / 2000</span>
+                            </div>
+                            <textarea id="message" name="message" rows="6" class="form-field resize-y" placeholder="Décrivez votre projet ou votre besoin..." maxlength="2000" required></textarea>
+                            <p class="field-error" data-error-for="message"></p>
+                        </div>
+
+                        <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+
+                        <button type="submit" id="submit-btn" class="w-full px-8 py-4 rounded-xl bg-brand-600 hover:bg-brand-500 text-white font-semibold flex items-center justify-center gap-2 transition-all shadow-lg shadow-brand-600/30">
+                            <i data-lucide="send" class="w-5 h-5"></i>
+                            <span id="submit-label">Envoyer le message</span>
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <p class="text-xs text-slate-500 pt-16 text-center">
+                © 2026 Nolan Babic. Tous droits réservés.
+            </p>
+        </div>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/script.js"></script>
+</body>
+</html>
